@@ -29,7 +29,7 @@ user.password = hash
     }
    */
 });
-// checkUsernameExists,
+
 
 router.post("/login", checkUsernameExists, (req, res, next) => {
 
