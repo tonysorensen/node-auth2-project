@@ -31,7 +31,7 @@ user.password = hash
 });
 // checkUsernameExists,
 
-router.post("/login",  (req, res, next) => {
+router.post("/login", checkUsernameExists, (req, res, next) => {
 
   let { username, password } = req.body;
 
